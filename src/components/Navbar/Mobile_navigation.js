@@ -16,12 +16,12 @@ const [sidebar, setSidebar] = useState(false);
         <div className={mobnStyle.Mobile_navbar}>
           <div className={ sidebar ? mobnStyle.closeMenu : mobnStyle.openMenu }>
           <Link to='#' className={mobnStyle.menu_bars}>
-          <FiMenu style={{color:'#000000', fontSize:'30px'}} onClick={showSidebar}></FiMenu>
+          <FiMenu className={mobnStyle.openicon} onClick={showSidebar}></FiMenu>
           </Link>
           </div>
           <div className={sidebar ? mobnStyle.openMenu : mobnStyle.closeMenu}>
             <Link to='#' className={mobnStyle.menu_bars}>
-          <AiOutlineClose style={{color:'#000000', fontSize:'30px'}} onClick={showSidebar}></AiOutlineClose>
+          <AiOutlineClose className={mobnStyle.closeicon} onClick={showSidebar}></AiOutlineClose>
             </Link>
           </div>
         </div>

@@ -21,11 +21,24 @@
   position: fixed;
   top: 120px;
   left: -100%;
-  transition: 1s;
+  /* transition: 1s; */
+}
+.openicon {
+  color: #000000;
+  font-size: 30px;
+  margin: 0px;
+}
+.closeicon {
+  color: #000000;
+  font-size: 30px;
+  margin-left: 90px;
+  margin-top: 50px;
+  z-index: 1;
+  position: relative;
 }
 .nav_menu.active {
   left: 0%;
-  transition: 0.5s;
+  /* transition: 0.5s; */
 }
 .nav_text {
   display: flex;
